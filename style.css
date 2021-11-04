@@ -2,22 +2,32 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
-header{
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{                                  /*inizio header*/
     height: 8vh;
     width: 100%;
     background-color: #3161E0;
-    position: fixed;
-    top: 0;
-    left: 0;
+
 }
 nav{
     margin: 0 auto;
     width: 90%;
+    margin: 0 5%;
     text-align: center;
     font-size: 20px;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
 
+}
+a{
+    text-decoration: none;
+
+}
 nav ul{
     list-style-type: none;
 }
@@ -28,7 +38,6 @@ nav ul li{
 
 }
 nav a{
-    text-decoration: none;
     color: white;
 }
 nav ul li{
@@ -44,11 +53,56 @@ nav ul li{
 .button{
     float: right;
 }
-.button a{
+.button > a{
     height: 50px;
-    width: 50px;
-    padding: 12px 12px;
+    width: auto;
+    padding: 10px 12px;
     border-radius: 21px;
     background-color: white;
     color: black;
+}                                       /*fine header*/
+
+#dlink{                                 /*inizio section*/    
+    width: 100%;
+    height: 75vh;
+    background-image: url(img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
 }
+.dlinktext{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    font-size: 3vh;
+    color: white;
+}
+.dlinktext > h1{
+    margin-bottom: 5vh;
+}
+.dlinktext > p{
+    font-size: 2vh;
+}
+#scarica{
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px 12px;
+    border-radius: 21px;
+    background-color: white;
+    color: #23272A;
+    font-size: 2vh;
+    margin-top: 2vh;
+}
+#scarica:nth-of-type(2){
+    background-color: #23272A;
+    color: white;
+    margin-left: 1vh;
+}
+#scarica:nth-of-type(1):before{
+    content: '\2193';
+    font-size: 2vh;
+    font-weight: bold;
