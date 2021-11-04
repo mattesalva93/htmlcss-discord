@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -11,18 +10,18 @@ header{                                  /*inizio header*/
     height: 8vh;
     width: 100%;
     background-color: #255EE9;
-
 }
 nav{
     margin: 0 auto;
-    width: 90%;
-    margin: 0 5%;
     text-align: center;
     font-size: 1.5vh;
     position: fixed;
     top: 0;
     left: 0;
-
+    z-index: 999;
+    height: 8vh;
+    width: 100%;
+    background-color: #255EE9;
 }
 a{
     text-decoration: none;
@@ -49,9 +48,11 @@ nav ul li{
 }
 .logo{
     float: left;
+    margin-left: 5%;
 }
 .button{
     float: right;
+    margin-right: 5%;
 }
 .button > a{
     width: auto;
@@ -106,3 +107,38 @@ nav ul li{
     font-size: 1.5vh;
     font-weight: bold;                      
 }                                               /*fine section*/
+
+#container{                                     /*inizio main*/
+    width: 90%;
+    margin: 20vh auto 0 auto;
+    height: 80vh;
+}
+.colsx{
+    float: right;
+    width: 50%;
+}
+.colsx img{
+    width: 70vh;
+}
+.coldx{
+    float: right;
+    text-align: left;
+    width: 30%;
+    padding-right: 100px;
+}
+.coldx h1{
+    font-size: 6vh;
+}
+.coldx p{
+    font-size: 1.5vh;
+    line-height: 1.5;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+.colsx:nth-of-type(2){
+    float: left;
+}
+.coldx:nth-of-type(2){
+    float: left;
+}   
