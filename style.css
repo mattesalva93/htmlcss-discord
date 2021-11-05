@@ -109,12 +109,13 @@ nav ul li{
     margin: 20vh auto 0 auto;
     min-height: 50vh;
 }
+
 .colsx{
     float: right;
     width: 50%;
 }
 .colsx img{
-    width: 60vh;
+    width: 80vh;
 }
 .coldx{
     float: right;
@@ -130,4 +131,22 @@ nav ul li{
     line-height: 1.5;
     margin-top: 2vh;
     font-weight: bold;
+}
+.colcx{
+    text-align: center;
+}
+.colcx h1{
+    font-size: 6vh;
+}
+.colcx p{
+    font-size: 1.5vh;
+    line-height: 1.5;
+    margin: 2vh auto;
+    font-weight: bold;
+    width: 70%;
+}
+.colcx #scarica{
+    background-color: #8EA1E1;
+    color: white;
+    margin-left: 1vh;
 }
