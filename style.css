@@ -28,7 +28,7 @@ a{
 nav a:hover{
     text-decoration: underline;
 }
-nav ul{
+ul{
     list-style-type: none;
 }
 
@@ -107,7 +107,7 @@ nav ul li{
 #container{                                     /*inizio main*/
     width: 90%;
     margin: 20vh auto 0 auto;
-    min-height: 50vh;
+    min-height: 60vh;
 }
 
 .colsx{
@@ -149,4 +149,81 @@ nav ul li{
     background-color: #8EA1E1;
     color: white;
     margin-left: 1vh;
+}
+#container:nth-of-type(even){
+    background-color:#F6F6F6;
+    width: 100%;
+    padding-top: 10vh;
+    min-height: 80vh;
+}   
+#container:nth-of-type(4){
+    padding-bottom: 10vh;
+}                                                   /*fine main*/
+
+footer{                                             /*inizio footer*/
+    width: 100%;
+    min-height: 60vh;
+    background-color: #23272A;
+    padding: 8vh 0;
+}
+.footup{
+    width: 90%;
+    margin:0 auto;
+    padding-bottom:40px;
+}
+.footup::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footcol{
+    float: left;
+    width: 17%;
+    margin: 0 1%;
+    min-height: 20vh;
+}
+.footcol1{
+    float: left;
+    width: 22%;
+    margin: 0 1%;
+    min-height: 20vh;
+}
+.footcol1 h2{
+    font-size:2.5vh;
+    width: 50%;
+    color: #7289DA;
+    line-height: 1.5;
+}
+.footup li{
+    line-height: 40px;
+    color: white;
+}
+.footcol1 img{
+    width: 2vh;
+}
+i[class^="fab"]{
+    padding-right: 15px;
+    cursor: pointer;
+}
+.footcol a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#firstchild{
+    color: #7289DA;
+}
+.footdown{
+    border-top: 1px solid #7289DA;
+    padding-top: 40px;
+    width: 90%;
+    margin: 0 auto;
+}
+.footdown .button{
+    width: auto;
+    padding: 12px 20px;
+    border-radius: 21px;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
 }
